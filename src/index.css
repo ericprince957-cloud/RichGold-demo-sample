@@ -2,18 +2,15 @@
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
-  --color-gold-50: #fdf8e8;
-  --color-gold-100: #f9edcc;
-  --color-gold-200: #f3d999;
-  --color-gold-300: #e8c066;
-  --color-gold-400: #d4af37;
-  --color-gold-500: #c9a020;
-  --color-gold-600: #b8860b;
-  --color-gold-700: #956b09;
-  --color-gold-800: #7a570d;
-  --color-gold-900: #664810;
-  --color-champagne: #f7e7ce;
-  --color-richgold: #c9a96e;
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --color-gold: #C9A227;
+  --color-gold-light: #D4B44A;
+  --color-gold-dark: #A8861F;
+  --color-gold-muted: #E8D48B;
+  --color-charcoal: #1A1A1A;
+  --color-cream: #FAF6EF;
+  --color-cream-dark: #F0EAE0;
+  --color-warm-gray: #6B6358;
 }
 
 * {
@@ -27,6 +24,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAF6EF;
 }
 
 /* Custom scrollbar */
@@ -35,14 +33,20 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #FAF6EF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c9a96e;
+  background: #C9A227;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8860b;
+  background: #A8861F;
+}
+
+/* Selection color */
+::selection {
+  background-color: #C9A227;
+  color: #FFFFFF;
 }
